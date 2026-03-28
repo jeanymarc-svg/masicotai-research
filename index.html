@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MasicotAI · Research</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05070a;--cd:#0d1119;--ch:#111622;--br:#1a2035;--bl:#222d45;--gd:#c9a84c;--gl:#dfc06a;--gdb:rgba(201,168,76,.08);--tp:#e8eaef;--ts:#8891a5;--tm:#4a5268;--gn:#22c55e;--mn:'JetBrains Mono',monospace;--sn:'DM Sans',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--tp);font-family:var(--mn);min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(201,168,76,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.012) 1px,transparent 1px);background-size:48px 48px;pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gd),transparent);z-index:100}
+.wrap{position:relative;z-index:1;max-width:900px;margin:0 auto;padding:40px 24px}
+.hd{margin-bottom:40px}
+.hd h1{font-family:var(--sn);font-size:32px;font-weight:700;color:#fff;letter-spacing:-.5px;margin-bottom:6px}
+.hd p{font-size:13px;color:var(--tm);line-height:1.6;max-width:600px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+
+.rc{background:var(--cd);border:1px solid var(--br);border-radius:12px;padding:28px;position:relative;overflow:hidden;transition:all .3s;text-decoration:none;display:block;border-top:3px solid transparent}
+.rc:hover{background:var(--ch);border-color:var(--bl);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.rc.free{border-top-color:var(--gn)}
+.rc.pro{border-top-color:var(--gd)}
+.rc.soon{border-top-color:var(--tm);opacity:.55;pointer-events:none}
+
+.rc-badge{display:inline-block;font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:14px}
+.rc-badge.free{background:rgba(34,197,94,.12);color:var(--gn)}
+.rc-badge.pro{background:var(--gdb);color:var(--gd)}
+.rc-badge.soon{background:rgba(74,82,104,.15);color:var(--tm)}
+
+.rc-title{font-family:var(--sn);font-size:18px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3}
+.rc-sub{font-size:12px;color:var(--ts);line-height:1.6;margin-bottom:16px}
+.rc-meta{display:flex;flex-wrap:wrap;gap:8px}
+.rc-tag{font-size:10px;color:var(--tm);background:rgba(74,82,104,.15);padding:3px 8px;border-radius:4px}
+.rc-arrow{position:absolute;bottom:24px;right:24px;font-size:18px;color:var(--tm);transition:all .3s}
+.rc:hover .rc-arrow{color:var(--gd);transform:translateX(3px)}
+
+.sep{display:flex;align-items:center;gap:12px;margin:36px 0 20px}
+.sep-line{flex:1;height:1px;background:var(--br)}
+.sep-text{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:var(--tm)}
+
+.ft{margin-top:56px;padding-top:20px;border-top:1px solid var(--br);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--tm)}
+.ft a{color:var(--gd);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hd">
+  <h1>Research</h1>
+  <p>Interactive institutional analysis powered by SEC 13F filings. Free dashboards updated quarterly. Pro subscribers get same-day access when new filings drop.</p>
+</header>
+
+<!-- FREE TIER -->
+<div class="grid">
+
+  <a class="rc free" href="https://jeanymarc-svg.github.io/masicotai-13f/" target="_top">
+    <div class="rc-badge free">Free</div>
+    <div class="rc-title">Institutional 13F Tracker</div>
+    <div class="rc-sub">Deep-dive into individual fund portfolios. Altimeter Capital and NVIDIA Corp — thesis, concentration, sector shifts, and quarter-over-quarter movements.</div>
+    <div class="rc-meta">
+      <span class="rc-tag">2 Funds</span>
+      <span class="rc-tag">Q2–Q4 2025</span>
+      <span class="rc-tag">Interactive</span>
+    </div>
+    <span class="rc-arrow">→</span>
+  </a>
+
+  <a class="rc free" href="https://jeanymarc-svg.github.io/masicotai-q4-Q.Q-intel/" target="_top">
+    <div class="rc-badge free">Free</div>
+    <div class="rc-title">AI/Tech Fund Intelligence — Q4 2025</div>
+    <div class="rc-sub">Cross-fund analysis of 11 elite AI/tech hedge funds. Consensus holdings, conviction scores, Q3→Q4 institutional flows, and fund drilldowns.</div>
+    <div class="rc-meta">
+      <span class="rc-tag">11 Funds</span>
+      <span class="rc-tag">$225B Tracked</span>
+      <span class="rc-tag">Q3→Q4 Flows</span>
+    </div>
+    <span class="rc-arrow">→</span>
+  </a>
+
+</div>
+
+<!-- COMING SOON -->
+<div class="sep">
+  <div class="sep-line"></div>
+  <div class="sep-text">Coming Soon</div>
+  <div class="sep-line"></div>
+</div>
+
+<div class="grid">
+
+  <div class="rc soon">
+    <div class="rc-badge soon">Pro · Q1 2026</div>
+    <div class="rc-title">AI/Tech Fund Intelligence — Q1 2026</div>
+    <div class="rc-sub">Same-day analysis when Q1 2026 13F filings drop. Pro subscribers get first access with real-time alerts.</div>
+    <div class="rc-meta">
+      <span class="rc-tag">16+ Funds</span>
+      <span class="rc-tag">Same-Day Analysis</span>
+    </div>
+  </div>
+
+  <div class="rc soon">
+    <div class="rc-badge soon">Pro · Q1 2026</div>
+    <div class="rc-title">Fund-of-Funds Comparison</div>
+    <div class="rc-sub">Side-by-side portfolio comparison across any combination of tracked funds. Overlap analysis, divergence mapping, and positioning heatmaps.</div>
+    <div class="rc-meta">
+      <span class="rc-tag">Cross-Fund</span>
+      <span class="rc-tag">Heatmaps</span>
+    </div>
+  </div>
+
+</div>
+
+<footer class="ft">
+  <span>MasicotAI Research · SEC EDGAR 13F data · Not financial advice</span>
+  <span>Follow <a href="https://x.com/MasicotAI" target="_blank">@MasicotAI</a></span>
+</footer>
+
+</div>
+</body>
+</html>
